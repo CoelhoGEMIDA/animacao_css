@@ -1,0 +1,69 @@
+*,*::after, *::before {box-sizing: border-box;}
+
+  .conteudo{
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+  }
+
+  h1, h2, p{
+    text-align: center;
+  }
+
+  /* ______________________________________________________________ */
+  /* (Primeira Animação ) Trocar a cor de fundo continuamente */
+
+  /* Etapa 1 regra de animação (AnimaFundo) */
+  /* Trocar a cor de fundo da tela */
+
+  @keyframes animaFundo {
+    0% {background-color: lightblue;}
+    50% {background-color: lightcoral;}
+    100%{background-color: lightgreen;}
+  }
+
+  /* Etapa 2 Executar de animação (animaFundo) */
+
+  body {
+    font-family: 'Segoe UI';
+   
+    /* Versão abreviada da chamada */
+    animation: animaFundo 3s infinite alternate-reverse;
+  }
+
+  /* ______________________________________________________ */
+  /* Fazer texto aparecer com atraso */
+
+  /* 1° Etapa : regra de animação (aparecer) */
+  /* Fazer texto aparecer com atraso */
+  
+@keyframes aparecer {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+/* Etapa 2 Executar de animação (aparecer) */
+
+#dois {
+   animation-name: aparecer;
+   animation-duration: 5s;
+   animation-delay: 1s;
+   animation-fill-mode: backwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
